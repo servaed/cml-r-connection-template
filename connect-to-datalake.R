@@ -38,9 +38,9 @@ src_databases(sc)
 
 
 #Change database if necessary
-spark_session(sc) %>% invoke("sql", "USE airlinedata")
+spark_session(sc) %>% invoke("sql", "USE <sample_database>")
 
 
 #Read and show table
-intDf1 <- sparklyr::spark_read_table(sc, 'flights_orc')
+intDf1 <- sparklyr::spark_read_table(sc, '<sample_table>')
 sparklyr::sdf_collect(intDf1)

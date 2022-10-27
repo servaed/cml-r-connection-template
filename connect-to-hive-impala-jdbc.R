@@ -1,7 +1,7 @@
 #CONNECT TO CDW IMPALA / HIVE /UNIFIED ANALYTICS USING JDBC
 
 #Git for JDBC driver file
-#https://github.com/servaed/unified-analytics-jdbc.git
+#https://github.com/servaed/cml-r-connection-template.git
 
 #Run this once
 #install.packages("DBI")
@@ -18,7 +18,6 @@ workload_password <- '<your_workload_password>'
 library("DBI")
 library("rJava")
 library("RJDBC")
-
 
 
 #Initialize Connection
